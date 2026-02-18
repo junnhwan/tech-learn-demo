@@ -1,4 +1,4 @@
-package io.wanjune.agent;
+package io.wanjune.demo;
 
 import java.net.URI;
 import java.net.http.HttpClient;

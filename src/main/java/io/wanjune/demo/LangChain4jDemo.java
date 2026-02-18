@@ -1,4 +1,4 @@
-package io.wanjune.agent;
+package io.wanjune.demo;
 
 import dev.langchain4j.agent.tool.Tool;
 import dev.langchain4j.memory.chat.MessageWindowChatMemory;
@@ -34,7 +34,7 @@ public class LangChain4jDemo {
         OpenAiChatModel model = OpenAiChatModel.builder()
                 .baseUrl(BASE_URL)
                 .apiKey(API_KEY)
-                .modelName("gemini-3-flash")
+                .modelName("gpt-5.2")
                 .logRequests(true)
                 .logResponses(true)
                 .build();

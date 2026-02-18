@@ -1,3 +1,5 @@
+package io.wanjune.common;
+
 import io.github.cdimascio.dotenv.Dotenv;
 
 /**

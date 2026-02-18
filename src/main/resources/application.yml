@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+llm:
+  base-url: "https://api.361888.xyz/v1"
+  api-key: "sk-M0N386Dm1L8Xapo3eJtcSCJvoCnvM3Az7FTBGR3WruTzXBsw"
+  model: "gpt-5.2"
+  timeout-seconds: 60
+  temperature: 0.2
+
+agent:
+  max-steps: 5

@@ -1,4 +1,4 @@
-package io.wanjune.agent;
+package io.wanjune.demo;
 
 import io.github.cdimascio.dotenv.Dotenv;
 
