@@ -1,5 +1,7 @@
 package io.wanjune.agent;
 
+import io.github.cdimascio.dotenv.Dotenv;
+
 import java.net.URI;
 
 import java.net.http.HttpClient;
@@ -12,8 +14,9 @@ import java.net.http.HttpResponse;
  */
 public class OpenAIApiCallDemo {
 
-    private static final String BASEURL = "https://api.361888.xyz";
-    private static final String API_KEY = "sk-5E7mSXw1axA07sShvwjI9QfqFhV31ido4eqVsSCw9th1F5Wy";
+    private static final Dotenv dotenv = Dotenv.load();
+    private static final String BASE_URL = dotenv.get("OPENAI_BASE_URL");
+    private static final String API_KEY = dotenv.get("OPENAI_API_KEY");
 
     public static void main(String[] args) {
 
@@ -51,7 +54,7 @@ public class OpenAIApiCallDemo {
                     }
                     """;
             HttpRequest request = HttpRequest.newBuilder()
-                    .uri(new URI(BASEURL + "/v1/chat/completions"))
+                    .uri(new URI(BASE_URL + "/v1/chat/completions"))
                     .header("Authorization", "Bearer " + API_KEY)
                     .header("Content-Type", "application/json")
                     .POST(HttpRequest.BodyPublishers.ofString(requestBody))
