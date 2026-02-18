@@ -1,4 +1,4 @@
-package io.wanjune.agent.config;
+package io.wanjune.agent.config.properties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

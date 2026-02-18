@@ -11,5 +11,6 @@ import java.util.List;
 public record RunResponse(
         String traceId,
         String answer,
-        List<StepRecord> steps) {
+        List<StepRecord> steps,
+        boolean budgetExhausted) {
 }

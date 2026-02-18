@@ -10,3 +10,13 @@ llm:
 
 agent:
   max-steps: 5
+
+tools:
+  http:
+    allowed-hosts:
+      - "junnhwan.github.io"
+      - "www.xiaolincoding.com"
+      - "javaguide.cn"
+      - "linux.do"
+    timeout-seconds: 5
+    max-body-bytes: 5120

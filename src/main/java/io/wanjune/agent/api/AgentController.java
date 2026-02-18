@@ -25,7 +25,7 @@ public class AgentController {
     @PostMapping("/run")
     public RunResponse run(@Valid @RequestBody RunRequest req) {
         var r = agentService.run(req.query());
-        return new RunResponse(r.traceId(), r.answer(), r.steps());
+        return new RunResponse(r.traceId(), r.answer(), r.steps(), r.budgetExhausted());
     }
 
 }
